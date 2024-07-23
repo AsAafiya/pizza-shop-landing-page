@@ -1,0 +1,345 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px orange;
+    background: black;
+}
+#chk1{
+    display: none;
+}
+header i{
+    color: white;
+    cursor: pointer;  
+}
+header .logo{
+    color: white;
+    /* flex: 1; */
+    margin-left: 50px;
+    text-transform: uppercase;   
+}
+#pizza-logo{
+    color: orange;
+}
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid orange;
+}
+.nav-icon{
+    border: 2px solid white;
+}
+header .menu{
+    font-size: 2.5rem;
+    display: none;
+}
+/*hero-section*/
+#hero-section{
+    width: 100%;
+    height: 600px;
+}
+.img-container img{
+    width: 100%;
+    height: 600px;
+}
+#hero-section .img-container{
+    background-image: url("images/hero-section.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    
+}
+#hero-section .content{
+    padding-top: 250px;
+}
+#hero-section .content p{
+    color: white;
+    padding-left: 60px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+#hero-section p span{
+    color: orange;
+}
+.btn{
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 80px;
+    font-weight: bold;
+    background-color: rgb(77, 73, 73);
+    border: 0px solid gray;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.btn:hover{
+    font-size: 20px;
+    background-color: orange;
+}
+/*Body*/
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 33px;
+}
+.heading span{
+    background-color: orange;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box-para{
+    font-size: 15px;
+    line-height: 20px;
+}
+.box-btn{
+    font-weight: bold;
+    background-color: rgb(77, 73, 73);
+    border: 0px solid gray;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.box-btn:hover{
+    font-size: 20px;
+    background-color: orange;
+}
+/*Facilities*/
+.facilities .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+}
+.facilities .box-container .box{
+    border: 2px solid gray;
+    padding: 30px 20px;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.facilities .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px orange;
+}
+.facilities .box-container .box img{
+    transition: 0.5 ease;
+}
+.facilities .box-container .box img:hover{
+    transform: scale(1.2);
+}
+/*Menu*/
+.menu .menu-slider{
+    padding: 1rem;
+}
+.menu .menu-slider .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+.menu .menu-slider .box{
+    border: 2px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 250px;  
+}
+.menu .menu-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px orange;
+}
+.menu .menu-slider .box h1{
+    font-size: 35px;
+}
+.menu .menu-slider .box .price{
+    font-size: 20px;
+    padding: 6px 0px;
+}
+.star{
+    color: gold;
+}
+/*Review*/
+.Review-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+.Review-container .box{
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 250px;
+}
+.Review-container .box p{
+    padding: 20px 0px;
+    font-size: 15px;
+}
+.Review-container .box h2{
+    padding: 10px 0px;
+}
+.Review-container .box:hover{
+    box-shadow: 1px 1px 10px 4px orange;
+}
+.Review-container .box img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color:grey;
+    border: 1px solid black;
+}
+/*Footer*/
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px ;
+    background-color: gray;
+    border-radius: 20px;
+}
+.footer-container p{
+    color: white;
+    font-size: 15px;
+}
+.footer-container .footer-box{
+    padding: 30px 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 250px;
+}
+.footer-container .footer-box .links{
+    display: block;
+    line-height: 40px;
+    font-size: 15px;
+}
+.footer-container .footer-box a{
+    text-decoration: none;
+    color:white;
+}
+.footer-container .footer-box .social-icons{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.footer-container .footer-box h1{
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.footer-container .footer-box i{
+    color: orange;
+}
+.footer-container .footer-box a:hover i{
+    padding-right: 20px;
+}
+/*Reaponsive*/
+@media (max-width:786px){
+    html{
+        font-size: 50%;
+    }
+    header ul{
+        position: fixed;
+        top: 80px;
+        height: 300px;
+        width: 50%;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    #hero-section .img-container{
+        background-image: url("images/hero-section.jpg");
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+    }
+    #hero-section{
+        height: 250px;
+    }
+    .img-container img{
+        height: 250px;
+    }
+    #hero-section .content{
+        padding-top: 120px;
+    }
+    #hero-section .content p{
+        padding-left: 20px;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .btn{
+        font-size: 10px;
+        padding: 6px;
+        margin-left: 40px;
+    }
+    .facilities .box-container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .facilities .box-container .box{ 
+        margin-bottom: 20px;
+    }
+    .heading{
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 33px;
+    }
+    .menu .menu-slider .wrapper{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .Review-container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .footer-container .footer-box{
+        padding: 10px 20px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        height: 220px;
+        width: 220px;
+    }
+}
